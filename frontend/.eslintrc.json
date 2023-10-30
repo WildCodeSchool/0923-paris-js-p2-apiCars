@@ -18,13 +18,7 @@
   "plugins": ["react", "import"],
   "rules": {
     "no-console": "off",
-    "prettier/prettier": [
-      "error",
-      {
-        "endOfLine": "auto"
-      }
-    ],
-    "no-console": "off",
+    "react/prop-types": 0,
     "no-restricted-syntax": [
       "error",
       {
