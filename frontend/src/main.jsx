@@ -35,3 +35,14 @@ const router = createBrowserRouter([
     path: "./pages/modele random"
     element: <ModeleRandom/>
   }, */
+
+
+  function Main () {
+
+    return (
+      <h1>Salut</h1>
+    )
+  }
+
+
+  export default Main; 
