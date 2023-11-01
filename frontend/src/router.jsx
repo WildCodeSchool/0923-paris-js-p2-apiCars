@@ -12,26 +12,26 @@ const router = createBrowserRouter([
     element: <App />,
   },
   /*{
-    path: "./pages/home"
+    path: "/pages/home"
     element: <Home/>
   },
   {
-    path: "./pages/categorie"
+    path: "/pages/categorie"
     element: <Categorie/>
   },
   {
-    path: "./pages/inscription"
+    path: "/pages/inscription"
     element: <Inscription/>
   }, 
   {
-    path: "./pages/modele"
+    path: "/pages/modele"
     element: <Modele/>
   },
   {
-    path: "./pages/reservation"
+    path: "/pages/reservation"
     element: <Reservation/>
   }, 
   {
-    path: "./pages/modele random"
+    path: "/pages/modele random"
     element: <ModeleRandom/>
   }, */
