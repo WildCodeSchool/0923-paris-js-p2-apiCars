@@ -1,7 +1,7 @@
-import Home from "./pages/home/Home";
+import ComponentCard from "./components/ComponentCard";
 
 function App() {
-  return <Home />;
+  return <ComponentCard />;
 }
 
 export default App;
