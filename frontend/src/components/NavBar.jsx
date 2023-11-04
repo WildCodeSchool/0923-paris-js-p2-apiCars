@@ -1,6 +1,6 @@
 function NavBar() {
   return (
-    <>
+    <main>
       <div>
         <img src="" alt="" />
       </div>
@@ -15,7 +15,7 @@ function NavBar() {
         <h3>LogIn</h3>
         <h3>Sign up </h3>
       </div>
-    </>
+    </main>
   );
 }
 
