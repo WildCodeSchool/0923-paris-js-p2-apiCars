@@ -1,37 +1,17 @@
-/*
-import React from "react";
-import ReactDOM from "react-dom/client";
+/* import { Routes, Route } from "react-router-dom";
 
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+function Router() {
+  return (
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="/pages/Home" element={<Home />} />
+      <Route path="/pages/ListCategory" element={<ListCategory />} />
+      <Route path="/pages/Inscription" element={<Inscription />} />
+      <Route path="/pages/CarPage" element={<CarPage />} />
+      <Route path="/pages/Reservation" element={<Reservation />} />
+      <Route path="/pages/ListModelSearch" element={<ListModelSearch />} />
+    </Routes>
+  );
+}
 
-import App from "./App";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-  },
-  /*{
-    path: "/pages/home"
-    element: <Home/>
-  },
-  {
-    path: "/pages/categorie"
-    element: <Categorie/>
-  },
-  {
-    path: "/pages/inscription"
-    element: <Inscription/>
-  }, 
-  {
-    path: "/pages/modele"
-    element: <Modele/>
-  },
-  {
-    path: "/pages/reservation"
-    element: <Reservation/>
-  }, 
-  {
-    path: "/pages/modele random"
-    element: <ModeleRandom/>
-  }, */
+export default Router; */
