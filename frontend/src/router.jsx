@@ -1,37 +1,24 @@
-/*
-import React from "react";
-import ReactDOM from "react-dom/client";
-
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/home/Home";
+import CarPage from "./pages/CarPage/CarPage";
+import Inscription from "./pages/inscription/Inscription";
+import Reservation from "./pages/reservation/Reservation";
+import ListCategory from "./pages/ListCategory/ListCategory";
+import ListModelSearch from "./pages/ListModelSearch/ListModelSearch";
 import App from "./App";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-  },
-  /*{
-    path: "/pages/home"
-    element: <Home/>
-  },
-  {
-    path: "/pages/categorie"
-    element: <Categorie/>
-  },
-  {
-    path: "/pages/inscription"
-    element: <Inscription/>
-  }, 
-  {
-    path: "/pages/modele"
-    element: <Modele/>
-  },
-  {
-    path: "/pages/reservation"
-    element: <Reservation/>
-  }, 
-  {
-    path: "/pages/modele random"
-    element: <ModeleRandom/>
-  }, */
+function Router() {
+  return (
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="/pages/Home" element={<Home />} />
+      <Route path="/pages/ListCategory" element={<ListCategory />} />
+      <Route path="/pages/Inscription" element={<Inscription />} />
+      <Route path="/pages/CarPage" element={<CarPage />} />
+      <Route path="/pages/Reservation" element={<Reservation />} />
+      <Route path="/pages/ListModelSearch" element={<ListModelSearch />} />
+    </Routes>
+  );
+}
+
+export default Router;
