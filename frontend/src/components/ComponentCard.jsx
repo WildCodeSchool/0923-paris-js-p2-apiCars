@@ -17,6 +17,9 @@ function ComponentCard() {
         {makes.map((car) => (
           <li key={car}>
             {car.make} | {car.model} | {car.fuel_type}
+            <div>
+              <img src="src/assets/mercedesBenz.jpg" alt="Mercedes Benz" />
+            </div>
           </li>
         ))}
       </ul>
