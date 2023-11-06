@@ -1,11 +1,11 @@
 import { Routes, Route } from "react-router-dom";
-import App from "./App";
 import Home from "./pages/Home/Home";
 import CarPage from "./pages/CarPage/CarPage";
 import Inscription from "./pages/Inscription/Inscription";
 import Reservation from "./pages/Reservation/Reservation";
 import ListCategory from "./pages/ListCategory/ListCategory";
 import ListModelSearch from "./pages/ListModelSearch/ListModelSearch";
+import App from "./App";
 
 function Router() {
   return (
