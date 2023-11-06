@@ -1,3 +1,26 @@
 main {
   background-color: steelblue;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: armenian;
+  text-decoration: none;
+}
+
+.nav-img {
+  background-color: black;
+}
+.nav-item {
+  margin: 0%;
+  padding: 0%;
+}
+.nav-log {
+  margin: auto;
+  padding: 0%;
+  background-color: aliceblue;
+}
+
+.nav-log > h3 {
+  background-color: black;
 }
