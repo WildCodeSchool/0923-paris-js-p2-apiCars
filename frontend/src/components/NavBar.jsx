@@ -1,4 +1,8 @@
+import { useNavigate } from "react-router-dom";
+
 function NavBar() {
+  const navigate = useNavigate();
+
   return (
     <section id="navbar">
       <div id="logoNavBar">
@@ -6,7 +10,7 @@ function NavBar() {
       </div>
 
       <div id="itemsNavBar">
-        <h3>Home</h3>
+        <h3 onClick={() => navigate("/home")}>Home</h3>
         <h3>Cars</h3>
         <h3>Infos</h3>
       </div>
