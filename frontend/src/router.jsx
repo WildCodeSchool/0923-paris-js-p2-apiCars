@@ -1,3 +1,4 @@
+/*
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import CarPage from "./pages/CarPage/CarPage";
@@ -21,4 +22,4 @@ function Router() {
   );
 }
 
-export default Router;
+export default Router; */
