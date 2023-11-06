@@ -1,12 +1,12 @@
-import { BrowserRouter } from "react-router-dom";
-import Home from "./pages/Home/Home";
+import ComponentCard from "./components/ComponentCard";
+import Inscription from "./components/Inscription";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Home />;
-    </BrowserRouter>
+    <>
+      <ComponentCard />
+      <Inscription />
+    </>
   );
 }
-
 export default App;
