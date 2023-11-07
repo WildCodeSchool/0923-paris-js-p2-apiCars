@@ -27,7 +27,7 @@ function Inscription() {
   return (
     <fieldset>
       <h2 id="inscription">Inscription</h2>
-      <div>
+      <div className="">
         <label htmlFor="username">Nom :</label>
         <input
           type="text"
