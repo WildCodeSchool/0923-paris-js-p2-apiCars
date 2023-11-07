@@ -1,3 +1,4 @@
+/*
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import CarPage from "./pages/CarPage/CarPage";
@@ -22,3 +23,4 @@ function Router() {
 }
 
 export default Router;
+*/

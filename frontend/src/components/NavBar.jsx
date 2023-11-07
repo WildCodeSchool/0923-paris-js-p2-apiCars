@@ -1,13 +1,11 @@
 import React from "react";
+import "./navbar.css";
 
 function NavBar() {
   return (
-    <main>
+    <nav>
       <div className="nav-img">
-        <img
-          src="C:\Users\jouan\OneDrive\Bureau\wcs\apicars/carlogo.png"
-          alt=""
-        />
+        <img id="apicar" src="src/assets/carlogo.png" alt="logo" />
       </div>
 
       <div className="nav-item">
@@ -17,10 +15,10 @@ function NavBar() {
       </div>
 
       <div className="nav-log">
-        <h3>LogIn </h3>
-        <h3>Sign up </h3>
+        <h3>Log-In </h3>
+        <h3>Sign-up </h3>
       </div>
-    </main>
+    </nav>
   );
 }
 
