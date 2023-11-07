@@ -27,14 +27,16 @@ function Inscription() {
   return (
     <fieldset>
       <h2 id="inscription">Inscription</h2>
-      <label htmlFor="username">Nom :</label>
-      <input
-        type="text"
-        id="username"
-        name="username"
-        placeholder="Nom"
-        required
-      />
+      <div>
+        <label htmlFor="username">Nom :</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Nom"
+          required
+        />
+      </div>
 
       <label htmlFor="surname">Prénom :</label>
       <input
