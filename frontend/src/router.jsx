@@ -1,9 +1,9 @@
 /*
 import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home/Home";
+import Home from "./pages/home/Home";
 import CarPage from "./pages/CarPage/CarPage";
-import Inscription from "./pages/Inscription/Inscription";
-import Reservation from "./pages/Reservation/Reservation";
+import Inscription from "./pages/inscription/Inscription";
+import Reservation from "./pages/reservation/Reservation";
 import ListCategory from "./pages/ListCategory/ListCategory";
 import ListModelSearch from "./pages/ListModelSearch/ListModelSearch";
 import App from "./App";
@@ -22,5 +22,5 @@ function Router() {
   );
 }
 
-export default Router; 
+export default Router;
 */

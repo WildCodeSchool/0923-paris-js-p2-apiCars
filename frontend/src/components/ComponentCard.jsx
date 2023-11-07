@@ -13,12 +13,16 @@ function ComponentCard() {
 
   return (
     <div>
-      {makes.map((car) => (
-        <div key={car}>
-          {car.make} | {car.model} | {car.fuel_type}
-          <img src="src/assests/lagunaCoupe.jpeg" alt="Laguna coupé" />
-        </div>
-      ))}
+      <ul>
+        {makes.map((car) => (
+          <li key={car}>
+            {car.make} | {car.model} | {car.fuel_type}
+            <div>
+              <img src="src/assets/mercedesBenz.jpg" alt="Mercedes Benz" />
+            </div>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
