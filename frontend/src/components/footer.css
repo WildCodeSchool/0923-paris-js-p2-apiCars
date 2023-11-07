@@ -1,5 +1,7 @@
-.footer {
+import .footer {
   display: inline-flex;
   justify-content: space-around;
   background-color: rgb(203, 201, 201);
+  padding: 5px;
+  color: black;
 }
