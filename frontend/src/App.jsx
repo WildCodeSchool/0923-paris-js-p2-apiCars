@@ -1,7 +1,14 @@
-import Home from "./pages/home/Home";
+import ComponentCard from "./components/ComponentCard";
+import Inscription from "./components/Inscription";
+import NavBar from "./components/NavBar";
 
 function App() {
-  return <Home />;
+  return (
+    <>
+      <NavBar />
+      <ComponentCard />
+      <Inscription />
+    </>
+  );
 }
-
 export default App;
