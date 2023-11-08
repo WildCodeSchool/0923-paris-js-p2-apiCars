@@ -12,12 +12,12 @@ function Router() {
   return (
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="/pages/Home" element={<Home />} />
-      <Route path="/pages/ListCategory" element={<ListCategory />} />
-      <Route path="/pages/Inscription" element={<Inscription />} />
-      <Route path="/pages/CarPage" element={<CarPage />} />
-      <Route path="/pages/Reservation" element={<Reservation />} />
-      <Route path="/pages/ListModelSearch" element={<ListModelSearch />} />
+      <Route path="/Home" element={<Home />} />
+      <Route path="/ListCategory" element={<ListCategory />} />
+      <Route path="/Inscription" element={<Inscription />} />
+      <Route path="/CarPage" element={<CarPage />} />
+      <Route path="/Reservation" element={<Reservation />} />
+      <Route path="/ListModelSearch" element={<ListModelSearch />} />
     </Routes>
   );
 }

@@ -1,20 +1,18 @@
 import React from "react";
 import Footer from "../../components/Footer";
 import NavBar from "../../components/NavBar";
-import InscriptionForm from "../../components/InscriptionForm";
 import Banner from "../../components/Banner";
+import ComponentCard from "../../components/ComponentCard";
 
-import "./inscription.css";
-
-function Inscription() {
+function Reservation() {
   return (
     <>
       <NavBar />
       <Banner />
-      <InscriptionForm />
+      <ComponentCard />
       <Footer />
     </>
   );
 }
 
-export default Inscription;
+export default Reservation;
