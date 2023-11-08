@@ -10,6 +10,7 @@ import ListModelSearch from "./pages/ListModelSearch/ListModelSearch";
 import App from "./App";
 
 const router = createBrowserRouter([
+  // Pourquoi commence par la page App a la racine et non pas par la Home ?
   {
     path: "/",
     element: <App />,
