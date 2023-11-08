@@ -1,14 +1,11 @@
 import "./banner.css";
 
-function Banner() {
+function Banner(props) {
+  const { url, description } = props;
   return (
-    <div id="banner">
-      <h1>Banner</h1>
-      <img
-        className="bannerimage"
-        src="https://images.caradisiac.com/logos-ref/modele/modele--renault-laguna-3-coupe/S0-modele--renault-laguna-3-coupe.jpg"
-        alt="berline"
-      />
+    <div className="banner">
+      <p>{url}</p>
+      <p>{description}</p>
     </div>
   );
 }
