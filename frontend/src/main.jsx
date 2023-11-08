@@ -20,7 +20,6 @@ root.render(
   </React.StrictMode>
 );
 
-/*
   {
     path: "./pages/home"
     element: <Home/>
