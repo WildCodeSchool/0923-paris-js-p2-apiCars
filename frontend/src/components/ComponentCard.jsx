@@ -4,7 +4,9 @@ function ComponentCard() {
   const [makes, setMakes] = useState([]);
 
   useEffect(() => {
-    fetch("https://api.api-ninjas.com/v1/cars?make=mercedes&limit=3", {
+
+    fetch("https://api.api-ninjas.com/v1/cars?make=mercedes&limit=1", {
+
       headers: { "X-Api-Key": "muuYWq9dAz9b/aNUgbJwdQ==h5A05bKO34Ksflbh" },
     })
       .then((res) => res.json())
@@ -13,16 +15,12 @@ function ComponentCard() {
 
   return (
     <div>
-      <ul>
-        {makes.map((car) => (
-          <li key={car}>
-            {car.make} | {car.model} | {car.fuel_type}
-            <div>
-              <img src="src/assets/mercedesBenz.jpg" alt="Mercedes Benz" />
-            </div>
-          </li>
-        ))}
-      </ul>
+      {makes.map((car) => (
+        <div key={car.model}>
+          {car.make} | {car.model} | {car.fuel_type}
+          <img src="src/assets/mercedesBenz.jpg" alt="Mercedes Benz" />
+        </div>
+      ))}
     </div>
   );
 }

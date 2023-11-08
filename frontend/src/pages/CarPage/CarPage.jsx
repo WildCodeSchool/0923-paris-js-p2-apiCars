@@ -3,6 +3,7 @@ import Banner from "../../components/Banner";
 import Footer from "../../components/Footer";
 
 function CarPage() {
+
   return (
     <>
       <NavBar />
@@ -10,6 +11,7 @@ function CarPage() {
       <Footer />
     </>
   );
+
 }
 
 export default CarPage;
