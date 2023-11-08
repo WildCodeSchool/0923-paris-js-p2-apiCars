@@ -1,4 +1,4 @@
-import React from "react";
+import "./banner.css";
 
 function Banner(props) {
   const { url, description } = props;
