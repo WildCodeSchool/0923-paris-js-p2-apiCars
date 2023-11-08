@@ -1,6 +1,4 @@
 .footer {
- 
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,16 +12,15 @@
   text-align: center;
   box-sizing: border-box;
   justify-content: space-between;
-   
 }
 .contact {
-float:left;
+  float: left;
 }
 
 .reseaux {
-align-items: center;
+  align-items: center;
 }
 
 .emploi {
-float: right;
+  float: right;
 }
