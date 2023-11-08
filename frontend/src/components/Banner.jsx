@@ -1,10 +1,10 @@
 import "./banner.css";
 
 function Banner(props) {
-  const { url, description } = props;
+  const { description } = props;
   return (
     <div className="banner">
-      <p>{url}</p>
+      <img src=".\src\assets\photos\Audi.jpg" alt="Audi" />
       <p>{description}</p>
     </div>
   );
