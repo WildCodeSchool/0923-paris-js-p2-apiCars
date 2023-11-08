@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./inscriptionform.css";
 
 function Inscription() {
   const [password, setPassword] = useState("");
@@ -26,57 +27,71 @@ function Inscription() {
 
   return (
     <fieldset>
-      <h2 id="inscription">Inscription</h2>
-      <div className="">
-        <label htmlFor="username">Nom :</label>
-        <input
-          type="text"
-          id="username"
-          name="username"
-          placeholder="Nom"
-          required
-        />
-      </div>
+      <section className="unscrib">
+        <div className="saisie">
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Nom :"
+            required
+          />
+        </div>
 
-      <label htmlFor="surname">Prénom :</label>
-      <input
-        type="text"
-        id="surname"
-        name="surname"
-        placeholder="Prénom"
-        required
-      />
+        <div className="saisie">
+          <input
+            type="text"
+            id="surname"
+            name="surname"
+            placeholder="Prénom :"
+            required
+          />
+        </div>
 
-      <label htmlFor="courriel">Email :</label>
-      <input
-        type="email"
-        id="courriel"
-        name="courriel"
-        placeholder="dupont@boitemail.fr"
-        required
-      />
+        <div className="saisie">
+          <input
+            type="email"
+            id="courriel"
+            name="courriel"
+            placeholder="Mail : dupont@boitemail.fr"
+            required
+          />
+        </div>
+      </section>
 
-      <label htmlFor="tel">Tél :</label>
-      <input type="text" id="tel" name="tel" required />
+      <section className="unscrib">
+        <div className="saisie">
+          <input
+            type="text"
+            id="tel"
+            name="tel"
+            placeholder="Téléphone :"
+            required
+          />
+        </div>
 
-      <label htmlFor="password">Mot de passe :</label>
-      <input
-        type="password"
-        id="password"
-        name="password"
-        value={password}
-        onChange={handlePasswordChange}
-      />
+        <div className="saisie">
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Mot de passe :"
+            value={password}
+            onChange={handlePasswordChange}
+          />
+        </div>
 
-      <label htmlFor="confirmPassword">Confirmer le mot de passe :</label>
-      <input
-        type="password"
-        id="confirmPassword"
-        name="confirmPassword"
-        value={confirmPassword}
-        onChange={handleConfirmPasswordChange}
-      />
-
+        <div className="saisie">
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            placeholder="Confirmer mot de passe :"
+            value={confirmPassword}
+            onChange={handleConfirmPasswordChange}
+          />
+        </div>
+      </section>
       <div className="button">
         <button type="submit" onClick={handleSubmit}>
           S'INSCRIRE

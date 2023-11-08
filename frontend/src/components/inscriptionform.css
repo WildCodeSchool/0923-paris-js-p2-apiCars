@@ -1,3 +1,21 @@
 fieldset {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  background-color: rgba(10, 61, 89, 1);
+}
+
+input {
   display: block;
+  align-items: end;
+  margin-top: 2rem;
+  width: 25rem;
+  height: 2rem;
+}
+
+button {
+  margin-left: 40rem;
+  width: 10rem;
+  height: 5rem;
+  border-radius: 40rem;
 }
