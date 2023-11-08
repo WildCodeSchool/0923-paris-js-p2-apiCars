@@ -1,5 +1,15 @@
+import NavBar from "../../components/NavBar";
+import Banner from "../../components/Banner";
+import Footer from "../../components/Footer";
+
 function CarPage() {
-  return <h1>Ceci est la page d'une voiture spécifique</h1>;
+  return (
+    <>
+      <NavBar />
+      <Banner />
+      <Footer />
+    </>
+  );
 }
 
 export default CarPage;
