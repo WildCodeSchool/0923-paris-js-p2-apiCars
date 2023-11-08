@@ -1,5 +1,5 @@
 import ComponentCard from "./components/ComponentCard";
-import Inscription from "./components/Inscription";
+import InscriptionForm from "./components/InscriptionForm";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 
@@ -8,7 +8,7 @@ function App() {
     <>
       <NavBar />
       <ComponentCard />
-      <Inscription />
+      <InscriptionForm />
       <Footer />
     </>
   );

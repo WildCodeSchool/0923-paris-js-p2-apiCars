@@ -1,6 +1,6 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import ListCategory from "./pages/ListCategory/ListCategory";
 import Inscription from "./pages/Inscription/Inscription";
@@ -10,34 +10,33 @@ import ListModelSearch from "./pages/ListModelSearch/ListModelSearch";
 import App from "./App";
 
 const router = createBrowserRouter([
-  // Pourquoi commence par la page App a la racine et non pas par la Home ?
   {
     path: "/",
     element: <App />,
   },
   {
-    path: "/home",
-    element: <Home />,
-  },
-  {
-    path: "/list-category",
-    element: <ListCategory />,
-  },
-  {
-    path: "/inscription",
+    path: "/Inscription",
     element: <Inscription />,
   },
   {
-    path: "/car-page",
-    element: <CarPage />,
+    path: "/Home",
+    element: <Home />,
+  },
+  {
+    path: "/ListCategory",
+    element: <ListCategory />,
+  },
+  {
+    path: "/ListModelSearch",
+    element: <ListModelSearch />,
   },
   {
     path: "/reservation",
     element: <Reservation />,
   },
   {
-    path: "/list-model-search",
-    element: <ListModelSearch />,
+    path: "/CarPage",
+    element: <CarPage />,
   },
 ]);
 
