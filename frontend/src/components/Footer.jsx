@@ -3,17 +3,17 @@ import "./footer.css";
 function Footer() {
   return (
     <div className="footer">
-      <div>
+      <div className="contact">
         <h3>Nous contacter</h3>
         <h3>api-car@boitemail.com</h3>
       </div>
 
-      <div>
+      <div className="reseaux">
         <h3>Suivez-nous</h3>
         <img id="picture-social-network" src="" alt="pictogrammes" />
       </div>
 
-      <div>
+      <div className="emploi">
         <h3>Recrutement</h3>
         <h3>Pole-emploi</h3>
       </div>

@@ -1,7 +1,26 @@
-import .footer {
-  display: inline-flex;
-  justify-content: space-around;
-  background-color: rgb(203, 201, 201);
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(223, 223, 223, 1);
   padding: 5px;
-  color: black;
+  color: rgb(2, 2, 2);
+  max-width: none;
+  border: 3em;
+  border-style: initial;
+  border-color: rgb(3, 3, 3);
+  text-align: center;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.contact {
+  float: left;
+}
+
+.reseaux {
+  align-items: center;
+}
+
+.emploi {
+  float: right;
 }
