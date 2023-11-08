@@ -1,5 +1,7 @@
+import ListCarModelRandom from "../../components/ListCarModelRandom";
+
 function ListCategory() {
-  return <h1>Page qui affiche les voitures par catégéorie</h1>;
+  return <ListCarModelRandom />;
 }
 
 export default ListCategory;
