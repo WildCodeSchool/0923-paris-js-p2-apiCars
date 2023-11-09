@@ -4,7 +4,8 @@ img {
   border-radius: 5rem;
 }
 
-.image {
+.car {
+  display: inline-block;
   align-items: center;
 }
 
