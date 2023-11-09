@@ -34,15 +34,17 @@ function ListCarModelRandom() {
   }, []);
   return (
     <div>
-      {cars
-        ? cars.map((car) => {
-            return (
-              <div key={car.model}>
-                <ComponentCard car={car} imageRandom={imageRandom()} />
-              </div>
-            );
-          })
-        : null}
+      <div>
+        {cars
+          ? cars.map((car) => {
+              return (
+                <div key={car.model}>
+                  <ComponentCard car={car} imageRandom={imageRandom()} />
+                </div>
+              );
+            })
+          : null}
+      </div>
     </div>
   );
 }
