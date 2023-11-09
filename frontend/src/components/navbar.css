@@ -6,8 +6,12 @@ nav {
   list-style: armenian;
   text-decoration: none;
   justify-content: space-between;
+  align-items: center;
+  color: aliceblue;
 }
-
+.h3-login {
+  color: black;
+}
 #nav-img {
   position: static;
   top: auto;
@@ -18,28 +22,13 @@ nav {
   height: 200px;
   width: 200px;
 }
-#nav-item {
-  margin: 0%;
-  padding: 0%;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-}
+
 #nav-log {
   position: relative;
   top: auto;
   color: white;
   font-size: 75%;
   margin-top: 2em;
-}
-
-.inscirptionNavBar h3 {
-  background-color: rgb(254, 255, 255);
-}
-
-.nav-item {
-  width: 100%;
-  text-align: center;
 }
 
 .h3-login {
@@ -50,4 +39,6 @@ nav {
   border-radius: 0.7em;
   border: 2px solid rgb(1, 1, 1);
   box-shadow: black;
+  padding-left: 23px;
+  padding-right: 0px;
 }
