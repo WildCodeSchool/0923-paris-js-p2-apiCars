@@ -5,8 +5,10 @@ function ComponentCard(props) {
   return (
     <div className="car">
       <div className="propsVoiture">
-        {car.make} | {car.model} | {car.fuel_type}
         <div>{imageRandom}</div>
+        <p className="description">
+          {car.make} | {car.model} | {car.fuel_type}
+        </p>
       </div>
     </div>
   );

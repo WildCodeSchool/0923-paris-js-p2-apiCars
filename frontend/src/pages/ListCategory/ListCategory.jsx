@@ -1,12 +1,14 @@
-import ListCarModelRandom from "../../components/ListCarModelRandom";
 import NavBar from "../../components/NavBar";
+import ListCarModelRandom from "../../components/ListCarModelRandom";
+import Footer from "../../components/Footer";
 
 function ListCategory() {
   return (
-    <div>
+    <>
       <NavBar />
       <ListCarModelRandom />
-    </div>
+      <Footer />
+    </>
   );
 }
 
