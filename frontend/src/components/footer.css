@@ -1,6 +1,7 @@
 .footer {
   display: flex;
-  justify-content: center;
+  text-decoration: underline;
+
   align-items: center;
   background-color: rgba(223, 223, 223, 1);
   padding: 5px;
@@ -15,12 +16,16 @@
 }
 .contact {
   float: left;
+  text-decoration: underline;
+  align-items: center;
 }
 
 .reseaux {
   align-items: center;
+  text-decoration: underline;
 }
 
 .emploi {
   float: right;
+  text-decoration: underline;
 }

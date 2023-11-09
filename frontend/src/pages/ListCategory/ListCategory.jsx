@@ -1,5 +1,15 @@
+import NavBar from "../../components/NavBar";
+import ListCarModelRandom from "../../components/ListCarModelRandom";
+import Footer from "../../components/Footer";
+
 function ListCategory() {
-  return <h1>Page qui affiche les voitures par catégéorie</h1>;
+  return (
+    <>
+      <NavBar />
+      <ListCarModelRandom />
+      <Footer />
+    </>
+  );
 }
 
 export default ListCategory;

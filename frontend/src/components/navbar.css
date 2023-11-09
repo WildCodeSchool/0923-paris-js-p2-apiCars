@@ -5,50 +5,39 @@ nav {
   list-style: armenian;
   text-decoration: none;
   justify-content: space-between;
-  width: 100%;
+  align-items: center;
+  color: aliceblue;
 }
-
-.nav-img {
+.h3-login {
+  color: black;
+}
+#nav-img {
   position: static;
   top: auto;
   float: left;
 }
 
 #apicar {
-  height: 91px;
-  width: 164px;
+  height: 200px;
+  width: 200px;
 }
-.nav-item {
-  margin: 0%;
-  padding: 0%;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  color: white;
-}
-.nav-log {
-  margin: 0%;
-  padding: 0%;
+
+#nav-log {
   position: relative;
   top: auto;
-  float: right;
+  color: white;
   font-size: 75%;
-  margin-top: 1em;
+  margin-top: 2em;
 }
 
-.nav-log > h3 {
-  background-color: rgb(254, 255, 255);
-  border-radius: 0.7em;
+.h3-login {
+  background-color: rgb(246, 240, 240);
   width: 5em;
   height: 1.4em;
-  border: 2px solid black;
-  float: right;
-  text-align: center;
-  margin: 0.5em;
-}
-
-.nav-item > h3 {
-  width: 100%;
-  text-align: center;
+  margin: 2em;
+  border-radius: 0.7em;
+  border: 2px solid rgb(1, 1, 1);
+  box-shadow: black;
+  padding-left: 23px;
+  padding-right: 0px;
 }
