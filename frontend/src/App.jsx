@@ -1,3 +1,4 @@
+import React from "react";
 import ComponentCard from "./components/ComponentCard";
 import InscriptionForm from "./components/InscriptionForm";
 import NavBar from "./components/NavBar";
