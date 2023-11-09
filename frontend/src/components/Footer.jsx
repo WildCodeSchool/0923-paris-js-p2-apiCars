@@ -10,7 +10,11 @@ function Footer() {
 
       <div className="reseaux">
         <h3>Suivez-nous</h3>
-        <img id="picture-social-network" src="" alt="pictogrammes" />
+        <img
+          id="picture-social-network"
+          src="src\assets\image\pictoreseau.png"
+          alt="pictogrammes"
+        />
       </div>
 
       <div className="emploi">

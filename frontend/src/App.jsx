@@ -1,13 +1,18 @@
-import ComponentCard from "./components/ComponentCard";
+
+
+
 import InscriptionForm from "./components/InscriptionForm";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+import Banner from "./components/Banner";
+import ListCarModelRandom from "./components/ListCarModelRandom";
 
 function App() {
   return (
     <>
       <NavBar />
-      <ComponentCard />
+      <Banner />
+      <ListCarModelRandom />
       <InscriptionForm />
       <Footer />
     </>
