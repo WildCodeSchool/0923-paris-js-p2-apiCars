@@ -1,0 +1,31 @@
+.banner {
+  background-image: url(C:\Users\Ags92\Documents\WCS\apicar-projet\0923-paris-js-p2-apiCars\frontend\src\assets\voiture-sport-couleur-metallisee-ruban-conduisant-grande-vitesse-route.jpg);
+  width: 100%;
+  height: 350px;
+  background-size: cover;
+  background-position: right 40% top 50%;
+  margin-top: 0;
+  padding-left: 5%;
+  align-items: center;
+}
+
+.banner > .text {
+  padding-top: 50px;
+}
+
+.banner p {
+  background-color: hsla(60, 1%, 66%, 0.75);
+  display: block;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  font-family: "Encode Sans Expanded";
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 10px 10px;
+  padding-left: 2%;
+  text-align: center;
+}
