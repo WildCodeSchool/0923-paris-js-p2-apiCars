@@ -10,6 +10,7 @@ nav {
 }
 .h3-login {
   color: black;
+  font-family: "Encode Sans Expanded";
 }
 #nav-img {
   position: static;
@@ -18,8 +19,8 @@ nav {
 }
 
 #apicar {
-  height: 150px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
 }
 
 #nav-log {
@@ -30,6 +31,10 @@ nav {
   margin-top: 2em;
 }
 
+.fontSizeItems {
+  font-size: 25px;
+  font-family: "Encode Sans Expanded";
+}
 .h3-login {
   background-color: rgb(246, 240, 240);
   width: 5em;
@@ -39,12 +44,5 @@ nav {
   box-shadow: black;
   padding-left: 23px;
   padding-right: 0px;
-  font-family: "Encode Sans Expanded";
-  margin-left: 15px;
   margin-right: 15px;
-}
-
-.fontSizeItems {
-  font-size: 20px;
-  font-family: "Encode Sans Expanded";
 }

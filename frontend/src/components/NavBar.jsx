@@ -15,20 +15,18 @@ function NavBar() {
         Home
       </h3>
 
-      <h3 className="fontSizeItems" onClick={() => navigate("/ListCategory")}>
-        Cars
-      </h3>
-      <h3 className="fontSizeItems" onClick={() => navigate("/home")}>
+      <h3 className="fontSizeItems">Cars</h3>
+      <h3 className="fontSizeItems" onClick={() => navigate("/CarPage")}>
         Infos
       </h3>
 
       <div id="inscirptionNavBar">
         <h3 className="h3-login" onClick={() => navigate("/inscription")}>
-          LogIn
+          Log-In
         </h3>
 
         <h3 className="h3-login" onClick={() => navigate("/inscription")}>
-          sign-up{" "}
+          Sign-up{" "}
         </h3>
       </div>
     </nav>
