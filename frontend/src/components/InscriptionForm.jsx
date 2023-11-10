@@ -80,7 +80,6 @@ function Inscription() {
             onChange={handlePasswordChange}
           />
         </div>
-
         <div className="saisie">
           <input
             type="password"

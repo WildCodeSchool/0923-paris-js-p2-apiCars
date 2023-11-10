@@ -11,12 +11,14 @@ function NavBar() {
         <img id="apicar" src="src/assets/carlogo.png" alt="logo" />
       </div>
 
-      <h3 className=" fontSizeItems" onClick={() => navigate("/home")}>
+      <h3 className="fontSizeItems" onClick={() => navigate("/home")}>
         Home
       </h3>
 
-      <h3 className=" fontSizeItems">Cars</h3>
-      <h3 className=" fontSizeItems">Infos</h3>
+      <h3 className="fontSizeItems">Cars</h3>
+      <h3 className="fontSizeItems" onClick={() => navigate("/CarPage")}>
+        Infos
+      </h3>
 
       <div id="inscirptionNavBar">
         <h3 className="h3-login" onClick={() => navigate("/inscription")}>
@@ -24,7 +26,7 @@ function NavBar() {
         </h3>
 
         <h3 className="h3-login" onClick={() => navigate("/inscription")}>
-          sign-up{" "}
+          Sign-up{" "}
         </h3>
       </div>
     </nav>
