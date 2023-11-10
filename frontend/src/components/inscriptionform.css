@@ -8,6 +8,7 @@ input {
   align-items: end;
   width: 12rem;
   height: 2rem;
+  font-family: "Encode sans Expanded";
 }
 
 button {
@@ -15,4 +16,5 @@ button {
   width: 10rem;
   height: 5rem;
   border-radius: 40rem;
+  font-family: "Encode sans Expanded";
 }

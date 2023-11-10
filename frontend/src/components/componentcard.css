@@ -11,6 +11,7 @@ img {
 
 p {
   text-align: center;
+  font-family: "Encode sans Expanded";
 }
 
 .propsVoiture {
@@ -22,6 +23,7 @@ p {
 
 .description {
   font-weight: bold;
+  background-color: white;
 }
 
 .car-container {
