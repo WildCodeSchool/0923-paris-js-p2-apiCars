@@ -22,7 +22,7 @@ div.lieu {
   margin-inline-end: 0px;
   border-width: 1px;
   border-color: black;
-  /* border-style: solid; */
+  border-style: solid;
   border-radius: 15px 15px;
   font-size: large;
   font-weight: bold;

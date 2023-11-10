@@ -1,11 +1,10 @@
 .banner {
   background-image: url("../assets/voiture-sport-couleur-metallisee-ruban-conduisant-grande-vitesse-route.jpg");
   width: 100%;
-  height: 350px;
+  height: 250px;
   background-size: cover;
   background-position: right 40% top 50%;
   margin-top: 0;
-  padding-left: 5%;
   align-items: center;
 }
 
