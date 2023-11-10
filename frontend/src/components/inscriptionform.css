@@ -5,7 +5,6 @@ fieldset {
 input {
   display: block;
   align-items: end;
-
   width: 12rem;
   height: 2rem;
 }

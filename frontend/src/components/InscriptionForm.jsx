@@ -92,6 +92,7 @@ function Inscription() {
           />
         </div>
       </section>
+
       <div className="button">
         <button type="submit" onClick={handleSubmit}>
           S'INSCRIRE
