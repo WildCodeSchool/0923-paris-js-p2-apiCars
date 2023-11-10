@@ -1,6 +1,6 @@
 fieldset {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   justify-items: center;
   background-color: rgba(10, 61, 89, 1);
 }
