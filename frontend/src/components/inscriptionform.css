@@ -1,15 +1,12 @@
 fieldset {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
+  /*justify-content: center;*/
   background-color: rgba(10, 61, 89, 1);
 }
 
 input {
   display: block;
   align-items: end;
-  margin-top: 2rem;
-  width: 25rem;
+  width: 12rem;
   height: 2rem;
 }
 
