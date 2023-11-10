@@ -1,5 +1,4 @@
 fieldset {
-  /*justify-content: center;*/
   background-color: rgba(10, 61, 89, 1);
 }
 
@@ -8,7 +7,7 @@ input {
   align-items: end;
   width: 12rem;
   height: 2rem;
-  font-family: "Encode sans Expanded";
+  font-family: "Encode Sans Expanded";
 }
 
 button {
@@ -16,5 +15,7 @@ button {
   width: 10rem;
   height: 5rem;
   border-radius: 40rem;
-  font-family: "Encode sans Expanded";
+  font-family: "Encode Sans Expanded";
+  font-weight: bold;
+  font-size: large;
 }

@@ -15,9 +15,7 @@ function NavBar() {
         Home
       </h3>
 
-      <h3 className="fontSizeItems" onClick={() => navigate("/ListCategory")}>
-        Cars
-      </h3>
+      <h3 className="fontSizeItems">Cars</h3>
       <h3 className="fontSizeItems" onClick={() => navigate("/CarPage")}>
         Infos
       </h3>
@@ -28,7 +26,7 @@ function NavBar() {
         </h3>
 
         <h3 className="h3-login" onClick={() => navigate("/inscription")}>
-          sign-Up{" "}
+          Sign-up{" "}
         </h3>
       </div>
     </nav>

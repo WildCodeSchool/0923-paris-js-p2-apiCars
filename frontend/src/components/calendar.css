@@ -26,7 +26,6 @@ div.lieu {
   margin-inline-end: 0px;
   border-width: 1px;
   border-color: black;
-  border-style: solid;
   border-radius: 15px 15px;
   font-size: large;
   font-weight: bold;
@@ -74,7 +73,6 @@ div.depart {
   margin-inline-end: 0px;
   border-width: 1px;
   border-color: black;
-  /* border-style: solid; */
   border-radius: 15px 15px;
   font-size: large;
   font-family: "Encode Sans Expanded";
@@ -95,7 +93,6 @@ div.retour {
   margin-inline-end: 0px;
   border-width: 1px;
   border-color: black;
-  /* border-style: solid; */
   border-radius: 15px 15px;
   font-size: large;
   font-family: "Encode Sans Expanded";
@@ -129,7 +126,6 @@ div.recherche {
   margin-inline-end: 0px;
   border-width: 1px;
   border-color: black;
-  /* border-style: solid; */
   border-radius: 15px 15px;
   font-size: large;
   font-family: "Encode Sans Expanded";
