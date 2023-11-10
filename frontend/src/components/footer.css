@@ -29,3 +29,8 @@
   float: right;
   text-decoration: underline;
 }
+
+#picture-social-network {
+  height: 0;
+  width: 0;
+}

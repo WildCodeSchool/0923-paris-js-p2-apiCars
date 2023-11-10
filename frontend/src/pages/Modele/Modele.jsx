@@ -1,12 +1,12 @@
-import Banner from "../../components/Banner";
 import Footer from "../../components/Footer";
+import ListCarModelRandom from "../../components/ListCarModelRandom";
 import NavBar from "../../components/NavBar";
 
 function Modele() {
   return (
     <>
       <NavBar />
-      <Banner />
+      <ListCarModelRandom />
       <Footer />;
     </>
   );
