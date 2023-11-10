@@ -1,5 +1,5 @@
 body {
-  background-color: rgba(255, 255, 255, 1);
+  /* background-color: rgba(255, 255, 255, 1); */
 }
 
 img {
@@ -15,6 +15,7 @@ img {
 
 p {
   text-align: center;
+  font-family: "Encode Sans Expanded";
 }
 
 .propsVoiture {
