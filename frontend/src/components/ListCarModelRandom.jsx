@@ -28,12 +28,13 @@ function ListCarModelRandom() {
   };
 
   useEffect(() => {
-    fetch("https://api.api-ninjas.com/v1/cars?make=ford&limit=9", {
+    fetch("https://api.api-ninjas.com/v1/cars?make=a&limit=9", {
       headers: { "X-Api-Key": "muuYWq9dAz9b/aNUgbJwdQ==h5A05bKO34Ksflbh" },
     })
       .then((res) => res.json())
       .then((data) => setCars(data));
   }, []);
+
   return (
     <div className="car-container">
       {cars

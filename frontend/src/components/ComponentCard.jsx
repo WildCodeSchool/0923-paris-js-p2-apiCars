@@ -2,6 +2,7 @@ import "./componentcard.css";
 
 function ComponentCard(props) {
   const { car, imageRandom } = props;
+
   return (
     <div className="car">
       <div className="propsVoiture">
