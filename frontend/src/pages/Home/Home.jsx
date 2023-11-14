@@ -8,7 +8,7 @@ import ListCarModelRandom from "../../components/ListCarModelRandom";
 function Home() {
   return (
     <>
-      <NavBar />
+      <NavBar className="NavBar" />
       <Banner />
       <Calendar />
       <ListCarModelRandom />

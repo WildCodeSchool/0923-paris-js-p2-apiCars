@@ -30,6 +30,10 @@ nav {
   font-size: 75%;
   margin-top: 2em;
 }
+.fontSizeItems {
+  font-size: 25px;
+  font-family: "Encode sans expanded";
+}
 
 .fontSizeItems {
   font-size: 25px;
