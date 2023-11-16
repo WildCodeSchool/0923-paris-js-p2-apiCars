@@ -11,6 +11,7 @@ function ComponentCard(props) {
     content = (
       <button
         type="button"
+        className="button"
         onClick={() => navigate(`/ListCategory?make=${car.make}`)}
       >
         <p className="description">{car.make}</p>
@@ -18,21 +19,15 @@ function ComponentCard(props) {
     );
   } else if (location.pathname === "/ListCategory") {
     content = (
-      <div>
-        <p className="description">
-          {car.model} | {car.fuel_type}
-        </p>
-      </div>
+      <button type="button" className="description">
+        <p>{car.model}</p>
+      </button>
     );
   }
   return (
-    <div className="car">
-      <div className="propsVoiture">
-        <div>
-          {imageRandom}
-          {content}
-        </div>
-      </div>
+    <div className="propsVoiture">
+      {imageRandom}
+      {content}
     </div>
   );
 }

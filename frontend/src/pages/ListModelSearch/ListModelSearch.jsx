@@ -1,9 +1,17 @@
+import Banner from "../../components/Banner";
+import Footer from "../../components/Footer";
+import ListCarModel from "../../components/ListCarModel";
+import NavBar from "../../components/NavBar";
+
 function ListModelSearch() {
   return (
-    <h1>
-      Ceci est la page ou s'affiche des modeles bien spécifiques définies via
-      une requete sur la Home
-    </h1>
+    <>
+      <NavBar />
+      <Banner />
+      <h1>Ceci est la page ou s'affiche des modeles bien spécifiques</h1>
+      <ListCarModel />
+      <Footer />
+    </>
   );
 }
 
