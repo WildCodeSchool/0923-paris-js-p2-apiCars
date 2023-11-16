@@ -1,11 +1,10 @@
 import "./bannerreservation.css";
 
-function BannerReservation(props) {
-  const { description } = props;
+function BannerReservation() {
   return (
     <div className="bannerReservation">
       <div className="text">
-        <p>{description} RESERVATION</p>
+        <p>RESERVATION</p>
       </div>
     </div>
   );
