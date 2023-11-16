@@ -1,9 +1,9 @@
-import "./banner2.css";
+import "./bannerreservation.css";
 
-function Banner(props) {
+function BannerReservation(props) {
   const { description } = props;
   return (
-    <div className="banner">
+    <div className="bannerReservation">
       <div className="text">
         <p>{description} RESERVATION</p>
       </div>
@@ -11,4 +11,4 @@ function Banner(props) {
   );
 }
 
-export default Banner;
+export default BannerReservation;

@@ -1,14 +1,14 @@
 import React from "react";
 import Footer from "../../components/Footer";
 import NavBar from "../../components/NavBar";
-import Banner2 from "../../components/banner2";
+import BannerReservation from "../../components/BannerReservation";
 import "./reservation.css";
 
 function Reservation() {
   return (
     <>
       <NavBar />
-      <Banner2 />
+      <BannerReservation />
       <div className="reservation">
         <input type="text" placeholder="NOM :" />
         <input type="text" placeholder="PRENOM :" />
