@@ -6,15 +6,16 @@
   background-position: right 40% top 50%;
   margin-top: 0;
   align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.text {
+.banner > .text {
   padding-top: 50px;
 }
-
 .banner p {
   background-color: hsla(60, 1%, 66%, 0.75);
-  display: block;
+
   margin-block-start: 0;
   margin-block-end: 0;
   margin-inline-start: 0;
@@ -25,6 +26,4 @@
   margin-left: 10%;
   margin-right: 10%;
   border-radius: 10px 10px;
-  padding-left: 2%;
-  text-align: center;
 }

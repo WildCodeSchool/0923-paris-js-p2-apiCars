@@ -1,7 +1,9 @@
 .arrayimg {
   width: 20rem;
   height: 10rem;
-  border-radius: 5rem;
+  border-radius: 2rem;
+  border: 5px solid;
+  color: black;
 }
 
 .car {
