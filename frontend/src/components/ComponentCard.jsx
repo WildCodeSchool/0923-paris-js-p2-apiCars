@@ -8,11 +8,11 @@ function ComponentCard(props) {
   const location = useLocation();
   let content;
 
-   if (location.pathname === "/Home") {
+  if (location.pathname === "/Home") {
     content = (
-      <button onClick={() => navigate(`/ListCategory?make=${car.make}`)}>
+      <div onClick={() => navigate(`/ListCategory?make=${car.make}`)}>
         <p className="description">{car.make}</p>
-      </button>
+      </div>
     );
   } else if (location.pathname === "/ListCategory") {
     content = (
@@ -22,7 +22,7 @@ function ComponentCard(props) {
         </p>
       </div>
     );
-  } 
+  }
   return (
     <div className="car">
       <div className="propsVoiture">
