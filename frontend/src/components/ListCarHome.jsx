@@ -31,7 +31,7 @@ function ListCarHome() {
   };
 
   useEffect(() => {
-    fetch("https://api.api-ninjas.com/v1/cars?make=a&limit=6", {
+    fetch("https://api.api-ninjas.com/v1/cars?make=a&limit=9", {
       headers: { "X-Api-Key": "muuYWq9dAz9b/aNUgbJwdQ==h5A05bKO34Ksflbh" },
     })
       .then((res) => res.json())
@@ -47,7 +47,7 @@ function ListCarHome() {
                 <ComponentCard
                   car={car}
                   imageRandom={imageRandom()}
-                  onClick={() => navigate("/CarPage")}
+                  onClick={() => navigate("/ListModelSearch")}
                 />
               </div>
             );
