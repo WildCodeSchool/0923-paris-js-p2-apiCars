@@ -1,4 +1,3 @@
-/*
 import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import ComponentCard from "./ComponentCard";
@@ -6,7 +5,6 @@ import ComponentCard from "./ComponentCard";
 function ListCarModelRandom() {
   const [params] = useSearchParams();
   const [uniqueMakes, setUniqueMakes] = useState([]);
-  const [setCars] = useState([]);
   const make = params.get("make");
 
   const imageRandom = () => {
@@ -109,6 +107,7 @@ function ListCarModelRandom() {
           let exist = false;
           uniqueMakesList.map((unique) => {
             if (unique.make === car.make) exist = true;
+            return true;
           });
           if (!exist) uniqueMakesList.push(car);
 
@@ -116,7 +115,6 @@ function ListCarModelRandom() {
         });
 
         setUniqueMakes(uniqueMakesList.slice(0, 9));
-        setCars(data);
       })
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
@@ -135,4 +133,3 @@ function ListCarModelRandom() {
 }
 
 export default ListCarModelRandom;
-*/
