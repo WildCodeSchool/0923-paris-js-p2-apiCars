@@ -4,9 +4,9 @@ import ComponentCard from "./ComponentCard";
 
 function ListCarModelRandom() {
   const [params] = useSearchParams();
-  // const [uniqueMakes, setUniqueMakes] = useState([]);
-  const make = params.get("make");
   const [cars, setCars] = useState([]);
+  const make = params.get("make");
+
   const imageRandom = () => {
     const tab = [
       <img src="src/assets/photos/mercedesBenz.jpg" alt="Mercedes Benz" />,
@@ -42,11 +42,12 @@ function ListCarModelRandom() {
       })
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
+
   return (
     <div className="car-container">
       {cars.map((car) => {
         return (
-          <div key={`${car.make} ${car.model} ${car.year}`}>
+          <div key={`${car.make}-${car.model}-${car.year}`}>
             <ComponentCard car={car} imageRandom={imageRandom()} />
           </div>
         );

@@ -23,6 +23,7 @@ p {
 
 .description {
   font-weight: bold;
+  background-color: white;
 }
 
 .car-container {

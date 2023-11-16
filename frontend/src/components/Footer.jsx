@@ -10,16 +10,38 @@ function Footer() {
 
       <div className="reseaux">
         <h3>Suivez-nous</h3>
-        <img
-          id="picture-social-network"
-          src="src\assets\image\pictoreseau.png"
-          alt="pictogrammes"
-        />
-      </div>
+        <a href="https://fr-fr.facebook.com/" target="_blank" rel="noreferrer">
+          <img
+            id="facebook"
+            src="src/assets/photos/facebook.svg"
+            alt="pictogrammes"
+          />
+        </a>
 
+        <a href="https://twitter.com" target="_blank" rel="noreferrer">
+          <img
+            id="twitter"
+            src="src/assets/photos/twitter.svg"
+            alt="pictogrammes"
+          />
+        </a>
+        <a href="https://www.google.fr/" target="_blank" rel="noreferrer">
+          <img
+            id="google"
+            src="src/assets/photos/google-plus-g.svg"
+            alt="pictogrammes"
+          />
+        </a>
+      </div>
       <div className="emploi">
         <h3>Recrutement</h3>
-        <h3>Pole-emploi</h3>
+        <a
+          href="https://www.pole-emploi.fr/accueil/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Pole-emploi
+        </a>
       </div>
     </div>
   );

@@ -1,15 +1,18 @@
+/*
 import "./componentcard.css";
-import { useLocation } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 function ComponentCard(props) {
   const { car, imageRandom } = props;
+  const navigate = useNavigate();
   const location = useLocation();
   let content;
-  if (location.pathname === "/Home") {
+
+   if (location.pathname === "/Home") {
     content = (
-      <div>
+      <button onClick={() => navigate(`/ListCategory?make=${car.make}`)}>
         <p className="description">{car.make}</p>
-      </div>
+      </button>
     );
   } else if (location.pathname === "/ListCategory") {
     content = (
@@ -19,7 +22,7 @@ function ComponentCard(props) {
         </p>
       </div>
     );
-  }
+  } 
   return (
     <div className="car">
       <div className="propsVoiture">
@@ -33,3 +36,4 @@ function ComponentCard(props) {
 }
 
 export default ComponentCard;
+*/

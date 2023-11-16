@@ -7,6 +7,7 @@ import ListModelSearch from "./pages/ListModelSearch/ListModelSearch";
 import Reservation from "./pages/Reservation/Reservation";
 
 function App() {
+  // penser a déclarer les componants essentiels ici pour avoir à se repeter
   return (
     <div>
       <Routes>
@@ -19,4 +20,5 @@ function App() {
     </div>
   );
 }
+
 export default App;
