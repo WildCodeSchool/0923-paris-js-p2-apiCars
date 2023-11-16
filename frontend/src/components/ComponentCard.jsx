@@ -28,13 +28,9 @@ function ComponentCard(props) {
     );
   }
   return (
-    <div className="car">
-      <div className="propsVoiture">
-        <div>
-          {imageRandom}
-          {content}
-        </div>
-      </div>
+    <div className="propsVoiture">
+      {imageRandom}
+      {content}
     </div>
   );
 }

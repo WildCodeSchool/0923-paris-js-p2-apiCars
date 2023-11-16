@@ -9,22 +9,86 @@ function ListCarModelRandom() {
 
   const imageRandom = () => {
     const tab = [
-      <img src="src/assets/photos/mercedesBenz.jpg" alt="Mercedes Benz" />,
-      <img src="src/assets/photos/Peugeot.jpg" alt="Mercedes Benz" />,
-      <img src="src/assets/photos/RenaultClio4.jpg" alt="Mercedes Benz" />,
-      <img src="src/assets/photos/Skoda.jpg" alt="Mercedes Benz" />,
-      <img src="src/assets/photos/Volvo.jpg" alt="Mercedes Benz" />,
-      <img src="src/assets/photos/carelec.jpg" alt="Mercedes Benz" />,
-      <img src="src/assets/photos/Mazda6.png" alt="Mercedes Benz" />,
-      <img src="src/assets/photos/utilitaire.jpg" alt="Mercedes Benz" />,
-      <img src="src/assets/photos/VWCocci.jpg" alt="Mercedes Benz" />,
-      <img src="src/assets/photos/utilitaire2.jpg" alt="Mercedes Benz" />,
-      <img src="src/assets/photos/ToyotaYaris.jpg" alt="Mercedes Benz" />,
-      <img src="src/assets/photos/ToyotaRav.jpg" alt="Mercedes Benz" />,
-      <img src="src/assets/photos/lagunaCoupe.jpeg" alt="Mercedes Benz" />,
-      <img src="src/assets/photos/Audi.jpg" alt="Mercedes Benz" />,
-      <img src="src/assets/photos/images(4).jpg" alt="Mercedes Benz" />,
-      <img src="src/assets/photos/images (3).jpg" alt="Mercedes Benz" />,
+      <img
+        src="src/assets/photos/mercedesBenz.jpg"
+        alt="Mercedes Benz"
+        className="arrayimg"
+      />,
+      <img
+        src="src/assets/photos/Peugeot.jpg"
+        alt="Mercedes Benz"
+        className="arrayimg"
+      />,
+      <img
+        src="src/assets/photos/RenaultClio4.jpg"
+        alt="Mercedes Benz"
+        className="arrayimg"
+      />,
+      <img
+        src="src/assets/photos/Skoda.jpg"
+        alt="Mercedes Benz"
+        className="arrayimg"
+      />,
+      <img
+        src="src/assets/photos/Volvo.jpg"
+        alt="Mercedes Benz"
+        className="arrayimg"
+      />,
+      <img
+        src="src/assets/photos/carelec.jpg"
+        alt="Mercedes Benz"
+        className="arrayimg"
+      />,
+      <img
+        src="src/assets/photos/Mazda6.png"
+        alt="Mercedes Benz"
+        className="arrayimg"
+      />,
+      <img
+        src="src/assets/photos/utilitaire.jpg"
+        alt="Mercedes Benz"
+        className="arrayimg"
+      />,
+      <img
+        src="src/assets/photos/VWCocci.jpg"
+        alt="Mercedes Benz"
+        className="arrayimg"
+      />,
+      <img
+        src="src/assets/photos/utilitaire2.jpg"
+        alt="Mercedes Benz"
+        className="arrayimg"
+      />,
+      <img
+        src="src/assets/photos/ToyotaYaris.jpg"
+        alt="Mercedes Benz"
+        className="arrayimg"
+      />,
+      <img
+        src="src/assets/photos/ToyotaRav.jpg"
+        alt="Mercedes Benz"
+        className="arrayimg"
+      />,
+      <img
+        src="src/assets/photos/lagunaCoupe.jpeg"
+        alt="Mercedes Benz"
+        className="arrayimg"
+      />,
+      <img
+        src="src/assets/photos/Audi.jpg"
+        alt="Mercedes Benz"
+        className="arrayimg"
+      />,
+      <img
+        src="src/assets/photos/images(4).jpg"
+        alt="Mercedes Benz"
+        className="arrayimg"
+      />,
+      <img
+        src="src/assets/photos/images (3).jpg"
+        alt="Mercedes Benz"
+        className="arrayimg"
+      />,
     ];
     const randomIndex = Math.floor(Math.random() * tab.length);
     return tab[randomIndex];
@@ -47,7 +111,7 @@ function ListCarModelRandom() {
     <div className="car-container">
       {cars.map((car) => {
         return (
-          <div className="Carte" key={`${car.make}-${car.model}-${car.year}`}>
+          <div className="carte" key={`${car.make}-${car.model}-${car.year}`}>
             <ComponentCard car={car} imageRandom={imageRandom()} />
           </div>
         );
