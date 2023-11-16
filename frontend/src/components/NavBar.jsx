@@ -8,13 +8,17 @@ function NavBar() {
   return (
     <nav>
       <div className="nav-img">
-        <img id="apicar" src="src/assets/carlogo.png" alt="logo" />
+        <img
+          id="apicar"
+          src="src/assets/carlogo.png"
+          alt="logo"
+          onClick={() => navigate("/home")}
+        />
       </div>
 
       <h3 className="fontSizeItems" onClick={() => navigate("/Home")}>
         Home
       </h3>
-
       <h3 className="fontSizeItems" onClick={() => navigate("/ListCategory")}>
         Cars
       </h3>

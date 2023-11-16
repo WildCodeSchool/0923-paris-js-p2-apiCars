@@ -8,7 +8,7 @@ import ListCarHome from "../../components/ListCarHome";
 function Home() {
   return (
     <>
-      <NavBar />
+      <NavBar className="NavBar" />
       <Banner />
       <Calendar />
       <ListCarHome />
