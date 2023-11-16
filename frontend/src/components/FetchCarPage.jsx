@@ -1,11 +1,8 @@
 import { useState, useEffect } from "react";
-import { useSearchParams } from "react-router-dom";
-import ComponentCard from "./ComponentCard";
+import ComponentCarPage from "./ComponentCarPage";
 
-function ListCarModelRandom() {
-  const [params] = useSearchParams();
-  const [cars, setCars] = useState([]);
-  const make = params.get("make");
+function CarModel() {
+  const [cars, setCars] = useState();
 
   const imageRandom = () => {
     const tab = [
@@ -29,31 +26,27 @@ function ListCarModelRandom() {
     const randomIndex = Math.floor(Math.random() * tab.length);
     return tab[randomIndex];
   };
+
   useEffect(() => {
-    const url = make
-      ? `https://api.api-ninjas.com/v1/cars?make=${make}&limit=9`
-      : "https://api.api-ninjas.com/v1/cars?make=a&limit=9";
-    fetch(url, {
+    fetch("https://api.api-ninjas.com/v1/cars?make=renault&limit=1", {
       headers: { "X-Api-Key": "muuYWq9dAz9b/aNUgbJwdQ==h5A05bKO34Ksflbh" },
     })
       .then((res) => res.json())
-      .then((data) => {
-        setCars(data);
-      })
-      .catch((error) => console.error("Error fetching data:", error));
+      .then((data) => setCars(data));
   }, []);
-
   return (
     <div className="car-container">
-      {cars.map((car) => {
-        return (
-          <div key={`${car.make}-${car.model}-${car.year}`}>
-            <ComponentCard car={car} imageRandom={imageRandom()} />
-          </div>
-        );
-      })}
+      {cars
+        ? cars.map((car) => {
+            return (
+              <div key={car.make}>
+                <ComponentCarPage car={car} imageRandom={imageRandom()} />
+              </div>
+            );
+          })
+        : null}
     </div>
   );
 }
 
-export default ListCarModelRandom;
+export default CarModel;
