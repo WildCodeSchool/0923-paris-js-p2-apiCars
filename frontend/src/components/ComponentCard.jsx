@@ -19,11 +19,12 @@ function ComponentCard(props) {
     );
   } else if (location.pathname === "/ListCategory") {
     content = (
-      <div>
-        <p className="description">
-          {car.model} | {car.fuel_type}
-        </p>
-      </div>
+      <button
+        type="button"
+        onClick={() => navigate(`/CarPage?model=${car.model}`)}
+      >
+        <p className="description">{car.model}</p>
+      </button>
     );
   }
   return (
