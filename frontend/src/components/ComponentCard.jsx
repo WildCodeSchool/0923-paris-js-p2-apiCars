@@ -1,4 +1,3 @@
-/*
 import "./componentcard.css";
 import { useNavigate, useLocation } from "react-router-dom";
 
@@ -10,9 +9,12 @@ function ComponentCard(props) {
 
   if (location.pathname === "/Home") {
     content = (
-      <div onClick={() => navigate(`/ListCategory?make=${car.make}`)}>
+      <button
+        type="button"
+        onClick={() => navigate(`/ListCategory?make=${car.make}`)}
+      >
         <p className="description">{car.make}</p>
-      </div>
+      </button>
     );
   } else if (location.pathname === "/ListCategory") {
     content = (
@@ -36,4 +38,3 @@ function ComponentCard(props) {
 }
 
 export default ComponentCard;
-*/

@@ -1,0 +1,50 @@
+body {
+  background-color: rgba(10, 61, 89, 1);
+}
+
+.carpage {
+  height: 1050px;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.descriptioncar {
+  width: 650px;
+  height: 550px;
+  margin-top: 10%;
+  margin-left: 2%;
+  margin-bottom: 9%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(217, 217, 217, 1);
+  border-radius: 10px 10px;
+  border: 5px solid;
+  border-color: black;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.carimage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 320px;
+}
+
+.carimage img:hover {
+  width: 350px;
+  height: 250px;
+}
+
+#buttoncar {
+  margin-top: 15px;
+}
+
+.buttoncarr {
+  flex-wrap: wrap;
+  font-size: xx-large;
+  width: 210px;
+  border: 5px solid;
+  color: black;
+}
