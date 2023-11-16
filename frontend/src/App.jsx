@@ -5,6 +5,7 @@ import Inscription from "./pages/Inscription/Inscription";
 import ListCategory from "./pages/ListCategory/ListCategory";
 import ListModelSearch from "./pages/ListModelSearch/ListModelSearch";
 import Reservation from "./pages/Reservation/Reservation";
+import CarPage from "./pages/CarPage/CarPage";
 
 function App() {
   // penser a déclarer les componants essentiels ici pour avoir à se repeter
@@ -14,6 +15,7 @@ function App() {
         <Route path="/Home" element={<Home />} />
         <Route path="/Inscription" element={<Inscription />} />
         <Route path="/ListCategory" element={<ListCategory />} />
+        <Route path="/CarPage" element={<CarPage />} />
         <Route path="/ListModelSearch" element={<ListModelSearch />} />
         <Route path="/Reservation" element={<Reservation />} />
       </Routes>

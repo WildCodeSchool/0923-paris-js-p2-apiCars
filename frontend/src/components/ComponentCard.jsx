@@ -1,4 +1,3 @@
-/*
 import "./componentcard.css";
 import { useNavigate, useLocation } from "react-router-dom";
 
@@ -8,9 +7,12 @@ function ComponentCard(props) {
   const location = useLocation();
   let content;
 
-   if (location.pathname === "/Home") {
+  if (location.pathname === "/Home") {
     content = (
-      <button onClick={() => navigate(`/ListCategory?make=${car.make}`)}>
+      <button
+        type="button"
+        onClick={() => navigate(`/ListCategory?make=${car.make}`)}
+      >
         <p className="description">{car.make}</p>
       </button>
     );
@@ -22,7 +24,7 @@ function ComponentCard(props) {
         </p>
       </div>
     );
-  } 
+  }
   return (
     <div className="car">
       <div className="propsVoiture">
@@ -36,4 +38,3 @@ function ComponentCard(props) {
 }
 
 export default ComponentCard;
-*/
