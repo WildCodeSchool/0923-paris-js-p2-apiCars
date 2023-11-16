@@ -12,6 +12,7 @@ function Inscription() {
       <NavBar />
       <Banner />
       <InscriptionForm />
+      <h1 id="pictureBottom"> </h1>
       <Footer />
     </>
   );
