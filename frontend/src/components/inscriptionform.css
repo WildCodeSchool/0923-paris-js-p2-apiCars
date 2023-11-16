@@ -10,7 +10,7 @@ input {
   font-family: "Encode Sans Expanded";
 }
 
-button {
+.btn {
   margin-left: 40rem;
   width: 10rem;
   height: 5rem;
