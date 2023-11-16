@@ -47,7 +47,7 @@ function ListCarModelRandom() {
     <div className="car-container">
       {cars.map((car) => {
         return (
-          <div key={`${car.make}-${car.model}-${car.year}`}>
+          <div className="Carte" key={`${car.make}-${car.model}-${car.year}`}>
             <ComponentCard car={car} imageRandom={imageRandom()} />
           </div>
         );
