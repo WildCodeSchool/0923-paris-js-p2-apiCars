@@ -3,15 +3,15 @@ import Footer from "../../components/Footer";
 import Banner from "../../components/Banner";
 import NavBar from "../../components/NavBar";
 import Calendar from "../../components/Calendar";
-import ListCarModelRandom from "../../components/ListCarModelRandom";
+import ListCarHome from "../../components/ListCarHome";
 
 function Home() {
   return (
     <>
-      <NavBar />
+      <NavBar className="NavBar" />
       <Banner />
       <Calendar />
-      <ListCarModelRandom />
+      <ListCarHome />
       <Footer />
     </>
   );
