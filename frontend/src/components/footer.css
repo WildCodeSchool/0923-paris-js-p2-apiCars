@@ -15,6 +15,7 @@
   justify-content: space-between;
   font-family: "Encode sans Expanded";
 }
+
 .contact {
   float: left;
   text-decoration: underline;
@@ -31,7 +32,20 @@
   text-decoration: underline;
 }
 
-#picture-social-network {
-  width: 12rem;
-  height: 2rem;
+#facebook {
+  height: 5%;
+  width: 5%;
+  margin-right: 5%;
+}
+
+#twitter {
+  height: 5%;
+  width: 5%;
+  margin-right: 5%;
+}
+
+#google {
+  height: 5%;
+  width: 7%;
+  margin-right: 5%;
 }
