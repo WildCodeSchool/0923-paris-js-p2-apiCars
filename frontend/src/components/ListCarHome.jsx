@@ -1,4 +1,3 @@
-/*
 import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import ComponentCard from "./ComponentCard";
@@ -6,7 +5,7 @@ import ComponentCard from "./ComponentCard";
 function ListCarModelRandom() {
   const [params] = useSearchParams();
   const [uniqueMakes, setUniqueMakes] = useState([]);
-  const [cars, setCars] = useState([]);
+  const [, setCars] = useState([]);
   const make = params.get("make");
 
   const imageRandom = () => {
@@ -43,6 +42,7 @@ function ListCarModelRandom() {
         const uniqueMakesList = [];
         data.map((car) => {
           let exist = false;
+          // eslint-disable-next-line array-callback-return
           uniqueMakesList.map((unique) => {
             if (unique.make === car.make) exist = true;
           });
@@ -71,4 +71,3 @@ function ListCarModelRandom() {
 }
 
 export default ListCarModelRandom;
-*/
