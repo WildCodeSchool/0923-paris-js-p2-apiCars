@@ -12,11 +12,11 @@ function NavBar() {
           id="apicar"
           src="src/assets/carlogo.png"
           alt="logo"
-          onClick={() => navigate("/home")}
+          onClick={() => navigate("/")}
         />
       </div>
 
-      <h3 className="fontSizeItems" onClick={() => navigate("/Home")}>
+      <h3 className="fontSizeItems" onClick={() => navigate("/")}>
         Home
       </h3>
       <h3 className="fontSizeItems" onClick={() => navigate("/ListCategory")}>
