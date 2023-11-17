@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import "./calendar.css";
 
 function Calendar() {
+  const navigate = useNavigate();
   return (
     <section className="calendar">
       <div className="lieu">
@@ -13,7 +15,13 @@ function Calendar() {
         <p id="ret">Retour :</p>
       </div>
       <div className="recherche">
-        <p id="rech">Rechercher</p>
+        <button
+          id="rech"
+          type="button"
+          onClick={() => navigate("/ListCategory")}
+        >
+          Rechercher
+        </button>
       </div>
     </section>
   );

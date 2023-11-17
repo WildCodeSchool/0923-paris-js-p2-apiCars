@@ -22,15 +22,16 @@ function Descriptioncar() {
 
   return (
     <div className="carpage">
+      <p id="modelcar">{car?.model}</p>
       <div className="descriptioncar">
-        <p>{car?.model}</p>
-        <p>{car?.cylinders}</p>
-        <p>{car?.fuel_type}</p>
+        <p>Modèle : {car?.model}</p>
+        <p>Cylindrées : {car?.cylinders}</p>
+        <p>Carburant : {car?.fuel_type}</p>
       </div>
       <div className="carimage">
-        <img src="src/assets/BUGATTI-CHIRON-02.png" alt="" />
-        <img src="src/assets/BUGATTI-CHIRON-13.png" alt="" />
-        <img src="src/assets/BUGATTI-CHIRON-05.png" alt="" />
+        <img id="tof1" src="src/assets/BUGATTI-CHIRON-02.png" alt="" />
+        <img id="tof2" src="src/assets/BUGATTI-CHIRON-13.png" alt="" />
+        <img id="tof3" src="src/assets/BUGATTI-CHIRON-05.png" alt="" />
       </div>
       <div className="buttoncar">
         <button
