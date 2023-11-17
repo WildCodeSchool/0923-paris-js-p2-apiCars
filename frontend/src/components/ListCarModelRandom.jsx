@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import ComponentCard from "./ComponentCard";
+import "./listCarModelRandom.css";
 
 function ListCarModelRandom() {
   const [params] = useSearchParams();
@@ -108,15 +109,18 @@ function ListCarModelRandom() {
   }, []);
 
   return (
-    <div className="car-container">
-      {cars.map((car) => {
-        return (
-          <div className="carte" key={`${car.make}-${car.model}-${car.year}`}>
-            <ComponentCard car={car} imageRandom={imageRandom()} />
-          </div>
-        );
-      })}
-    </div>
+    <>
+      <h1 id="titlemake">{make}</h1>
+      <div className="car-container">
+        {cars.map((car) => {
+          return (
+            <div className="carte" key={`${car.make}-${car.model}-${car.year}`}>
+              <ComponentCard car={car} imageRandom={imageRandom()} />
+            </div>
+          );
+        })}
+      </div>
+    </>
   );
 }
 
