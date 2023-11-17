@@ -137,11 +137,11 @@ div.recherche {
   padding-top: 10px;
 }
 
-p#rech {
+button#rech {
   background-color: rgb(133, 131, 131);
   border-radius: 10px 10px;
   height: 40px;
-  padding-top: 10px;
+  padding-top: 2px;
   font-family: "Encode Sans Expanded";
   font-size: large;
   font-weight: bold;
@@ -149,4 +149,5 @@ p#rech {
   padding-left: 22px;
   border-width: 2, 5px;
   border-color: black;
+  margin-top: 20px;
 }
