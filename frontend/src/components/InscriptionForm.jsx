@@ -19,7 +19,7 @@ function Inscription() {
     if (password.trim() === "" || confirmPassword.trim() === "") {
       alert("Veuillez remplir tous les champs de mot de passe.");
     } else if (password === confirmPassword) {
-      alert("Mot de passe correct !");
+      alert("Mot de passe correct ! Inscription validée !");
     } else {
       alert("Mot de passe incorrect. Veuillez réessayer.");
     }
@@ -92,8 +92,8 @@ function Inscription() {
         </div>
       </section>
 
-      <div className="btn">
-        <button type="submit" onClick={handleSubmit}>
+      <div>
+        <button className="btn" type="submit" onClick={handleSubmit}>
           S'INSCRIRE
         </button>
       </div>
