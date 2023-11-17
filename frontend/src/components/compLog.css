@@ -7,10 +7,11 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .boubou {
   width: 50%;
   margin-bottom: 20px;
-  margin-left: 25%;
 }
