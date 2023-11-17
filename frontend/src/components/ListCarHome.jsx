@@ -105,6 +105,7 @@ function ListCarModelRandom() {
         const uniqueMakesList = [];
         data.map((car) => {
           let exist = false;
+          // eslint-disable-next-line array-callback-return
           uniqueMakesList.map((unique) => {
             if (unique.make === car.make) exist = true;
             return true;

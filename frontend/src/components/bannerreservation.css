@@ -1,5 +1,5 @@
-.banner {
-  background-image: url(../assets/voiture-sport-couleur-metallisee-ruban-conduisant-grande-vitesse-route.jpg);
+.bannerReservation {
+  background-image: url(C:\Users\jouan\OneDrive\Bureau\wcs\apicars\0923-paris-js-p2-apiCars\frontend\src\assets\TESLA.jpg);
   width: 100%;
   height: 350px;
   background-size: cover;
@@ -10,20 +10,24 @@
   align-items: center;
   justify-content: center;
 }
-.banner > .text {
-  padding-top: 50px;
-}
-.banner p {
-  background-color: hsla(60, 1%, 66%, 0.75);
+.bannerReservation > .text {
+  padding-top: 35px;
+  color: black;
+  height: 1%;
+  width: 1%;
+  font-size: 30px;
+  font-weight: bold;
 
+  margin-right: 25%;
+  border-radius: 10px 10px;
+  font-family: "Encode Sans Expanded";
+}
+.bannerReservation > p {
+  background-color: hsla(60, 1%, 66%, 0.75);
   margin-block-start: 0;
   margin-block-end: 0;
   margin-inline-start: 0;
   margin-inline-end: 0;
-  font-family: "Encode Sans Expanded";
-  font-size: 30px;
-  font-weight: bold;
-  margin-left: 10%;
-  margin-right: 10%;
+
   border-radius: 10px 10px;
 }
