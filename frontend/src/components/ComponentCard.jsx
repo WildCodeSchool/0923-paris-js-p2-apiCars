@@ -7,7 +7,7 @@ function ComponentCard(props) {
   const location = useLocation();
   let content;
 
-  if (location.pathname === "/Home") {
+  if (location.pathname === "/") {
     content = (
       <button
         type="button"
