@@ -27,7 +27,7 @@ function NavBar() {
       </h3>
 
       <div id="inscirptionNavBar">
-        <h3 className="h3-login" onClick={() => navigate("/inscription")}>
+        <h3 className="h3-login" onClick={() => navigate("/Login")}>
           Log-In
         </h3>
 

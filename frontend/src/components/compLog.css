@@ -1,0 +1,16 @@
+.a {
+  background-color: aliceblue;
+  padding: 10px;
+  margin: 15px;
+}
+.papa {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.boubou {
+  width: 50%;
+  margin-bottom: 20px;
+  margin-left: 25%;
+}
