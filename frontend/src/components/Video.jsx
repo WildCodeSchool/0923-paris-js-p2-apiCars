@@ -1,3 +1,4 @@
+/*
 import React from "react";
 import ReactPlayer from "react-player/youtube";
 import "./video.css";
@@ -11,3 +12,4 @@ function Video() {
 }
 
 export default Video;
+*/
