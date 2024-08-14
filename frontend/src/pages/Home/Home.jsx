@@ -2,7 +2,6 @@ import React from "react";
 import Footer from "../../components/Footer";
 import Banner from "../../components/Banner";
 import NavBar from "../../components/NavBar";
-import SearchBar from "../../components/SearchBar";
 import ListCarHome from "../../components/ListCarHome";
 
 function Home() {
@@ -10,7 +9,6 @@ function Home() {
     <>
       <NavBar />
       <Banner />
-      <SearchBar />
       <ListCarHome />
       <Footer />
     </>
