@@ -1,19 +1,29 @@
 import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import ComponentCard from "./ComponentCard";
+import mercedezImage from "../assets/photos/mercedesBenz.jpg";
+import peugeotImage from "../assets/photos/Peugeot.jpg";
+import renaultImage from "../assets/photos/utilitaire.jpg";
+import skodaImage from "../assets/photos/Skoda.jpg";
+import volvoImage from "../assets/photos/Volvo.jpg";
+import mazdaImage from "../assets/photos/Mazda6.png";
+import volkswagenImage from "../assets/photos/VWCocci.jpg";
+import toyotaImage from "../assets/photos/ToyotaYaris.jpg";
 
-// Dictionnaire pour associer les marques de voitures à des images
 const imageMap = {
-  "Mercedes Benz": "src/assets/photos/mercedesBenz.jpg",
-  Peugeot: "src/assets/photos/Peugeot.jpg",
-  Renault: "src/assets/photos/renaultClio4.jpg",
-  Skoda: "src/assets/photos/Skoda.jpg",
-  Volvo: "src/assets/photos/Volvo.jpg",
-  Mazda: "src/assets/photos/Mazda6.png",
-  Volkswagen: "src/assets/photos/VWCocci.jpg",
-  Toyota: "src/assets/photos/ToyotaYaris.jpg",
-  "Generic Image": "src/assets/photos/defaultCar.jpg", // Image par défaut pour les marques non spécifiées
+  mercedezImage,
+  peugeotImage,
+  renaultImage,
+  skodaImage,
+  volvoImage,
+  mazdaImage,
+  volkswagenImage,
+  toyotaImage,
+  "generic image": "src/assets/photos/defaultCar.jpg",
 };
+
+// Fonction pour normaliser la clé de la marque
+const normalizeMake = (make) => make.toLowerCase();
 
 function ListCarModelRandom() {
   const [params] = useSearchParams();
@@ -30,10 +40,11 @@ function ListCarModelRandom() {
       .then((res) => res.json())
       .then((data) => {
         const uniqueMakesList = data.reduce((acc, car) => {
+          const normalizedMake = normalizeMake(car.make);
           if (!acc.some((unique) => unique.make === car.make)) {
             acc.push({
               ...car,
-              image: imageMap[car.make] || imageMap["Generic Image"],
+              image: imageMap[normalizedMake] || imageMap["generic image"],
             });
           }
           return acc;
@@ -43,7 +54,6 @@ function ListCarModelRandom() {
       })
       .catch((error) => console.error("Error fetching data:", error));
   }, [make]);
-
   return (
     <div className="car-container">
       {uniqueMakes.map((car) => (

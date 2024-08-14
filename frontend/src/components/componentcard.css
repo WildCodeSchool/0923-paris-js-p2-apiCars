@@ -3,17 +3,14 @@
   height: 10rem;
   border-radius: 5rem;
 }
-
 .car {
   display: inline-block;
   align-items: center;
 }
-
 p {
   text-align: center;
   font-family: "Encode Sans Expanded";
 }
-
 .propsVoiture {
   display: flex;
   flex-direction: column;
@@ -23,13 +20,15 @@ p {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   border-radius: 15%;
   box-shadow: 10%;
+  height: auto;
+  width: auto;
 }
-
 .description {
   font-weight: bold;
 }
-
 .car-container {
+  width: auto;
+  height: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -39,8 +38,12 @@ p {
   margin-bottom: 20px;
   margin-left: 12%;
   margin-right: 15%;
+  gap: 5%;
+  margin-bottom: 3rem;
 }
-
 .componentCardButton {
   border-radius: 20%;
+}
+.carte:hover {
+  transform: scale(1.15);
 }

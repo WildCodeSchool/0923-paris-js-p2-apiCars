@@ -2,7 +2,7 @@ import "./componentcard.css";
 import { useNavigate, useLocation } from "react-router-dom";
 
 function ComponentCard(props) {
-  const { car, imageRandom } = props;
+  const { car, image } = props;
   const navigate = useNavigate();
   const location = useLocation();
   let content;
@@ -30,7 +30,7 @@ function ComponentCard(props) {
   }
   return (
     <div className="propsVoiture">
-      {imageRandom}
+      {image}
       {content}
     </div>
   );
