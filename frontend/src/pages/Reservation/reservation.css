@@ -1,56 +1,58 @@
-.reservation {
+.reservation1 {
   display: flex;
-
   margin-block: 25px;
   padding-inline-start: 35%;
   margin: 25px;
 }
-.reservation input {
+.reservation1 input {
   border: 1.8px solid;
+  background-color: aliceblue;
 }
 .reservation2 {
   display: flex;
-
   margin-block: 25px;
   padding-inline-start: 35%;
   margin: 25px;
 }
 .reservation2 input {
   border: 1.8px solid;
+  background-color: aliceblue;
 }
 .reservation3 {
   display: flex;
-
   margin-block: 25px;
   padding-inline-start: 42%;
   margin: 25px;
 }
 .reservation3 input {
   border: 1.8px solid;
+  background-color: aliceblue;
 }
 .reservation4 {
   display: flex;
-
   margin-block: 25px;
   padding-inline-start: 35%;
   margin: 25px;
 }
 .reservation4 input {
   border: 1.8px solid;
+  background-color: aliceblue;
 }
 .reservation5 {
   display: flex;
-
   margin-block: 25px;
   padding-inline-start: 35%;
   margin: 25px;
 }
 .reservation5 input {
   border: 1.8px solid;
+  background-color: aliceblue;
 }
 .reservation6 {
   display: flex;
   margin: 1%;
+  justify-content: center;
+  align-items: center;
 }
 .reservation6 input {
   border: 1.8px solid;

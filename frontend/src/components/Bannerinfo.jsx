@@ -4,7 +4,7 @@ function BannerInfo() {
   return (
     <div className="bannerInfo">
       <div className="text">
-        <p>caractéristiques</p>
+        <h1>Caractéristiques</h1>
       </div>
     </div>
   );

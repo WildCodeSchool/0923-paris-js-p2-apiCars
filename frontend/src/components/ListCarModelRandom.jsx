@@ -90,6 +90,16 @@ function ListCarModelRandom() {
         alt="Mercedes Benz"
         className="arrayimg"
       />,
+      <img
+        src="src/asset/photos/wp5723231.jpg"
+        alt="Mercedes Benz"
+        className="arrayimg"
+      />,
+      <img
+        src="src/asset/photos/Tesla.jpg"
+        alt="Mercedes Benz"
+        className="arrayimg"
+      />,
     ];
     const randomIndex = Math.floor(Math.random() * tab.length);
     return tab[randomIndex];

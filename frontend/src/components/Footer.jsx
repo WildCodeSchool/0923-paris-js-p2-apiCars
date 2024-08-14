@@ -4,12 +4,12 @@ function Footer() {
   return (
     <div className="footer">
       <div className="contact">
-        <h3>Nous contacter</h3>
-        <h3>api-car@boitemail.com</h3>
+        <h3>Nous contacter : </h3>
+        <h4>Apicar@email.com</h4>
       </div>
 
       <div className="reseaux">
-        <h3>Suivez-nous</h3>
+        <h3>Suivez-nous : </h3>
         <a href="https://fr-fr.facebook.com/" target="_blank" rel="noreferrer">
           <img
             id="facebook"
@@ -34,7 +34,7 @@ function Footer() {
         </a>
       </div>
       <div className="emploi">
-        <h3>Recrutement</h3>
+        <h3>Recrutement : </h3>
         <a
           href="https://www.pole-emploi.fr/accueil/"
           target="_blank"

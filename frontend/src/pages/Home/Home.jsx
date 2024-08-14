@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "../../components/Footer";
 import Banner from "../../components/Banner";
 import NavBar from "../../components/NavBar";
-import Calendar from "../../components/Calendar";
+import SearchBar from "../../components/SearchBar";
 import ListCarHome from "../../components/ListCarHome";
 
 function Home() {
@@ -10,7 +10,7 @@ function Home() {
     <>
       <NavBar />
       <Banner />
-      <Calendar />
+      <SearchBar />
       <ListCarHome />
       <Footer />
     </>

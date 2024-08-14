@@ -52,10 +52,10 @@ p#li {
   border-radius: 10px 10px;
 }
 
-p#dep {
+#startCalendar {
   background-color: hsla(60, 1%, 66%, 0.75);
   font-family: "Encode Sans Expanded";
-  font-size: large;
+  font-size: medium;
   font-weight: bold;
   padding-right: 40px;
   padding-left: 30px;
@@ -71,7 +71,7 @@ div.depart {
   margin-block-end: 0;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  border-width: 1px;
+
   border-color: black;
   border-radius: 15px 15px;
   font-size: large;
@@ -81,8 +81,6 @@ div.depart {
   margin-top: 0px;
   text-align: center;
   align-items: center;
-  padding: -12pc;
-  padding-top: 10px;
 }
 
 div.retour {
@@ -91,7 +89,6 @@ div.retour {
   margin-block-end: 0;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  border-width: 1px;
   border-color: black;
   border-radius: 15px 15px;
   font-size: large;
@@ -101,14 +98,12 @@ div.retour {
   margin-top: 0px;
   text-align: center;
   align-items: center;
-  padding: -12pc;
-  padding-top: 10px;
 }
 
-p#ret {
+#backCalendar {
   background-color: hsla(60, 1%, 66%, 0.75);
   font-family: "Encode Sans Expanded";
-  font-size: large;
+  font-size: medium;
   font-weight: bold;
   padding-right: 40px;
   padding-left: 30px;
@@ -150,4 +145,26 @@ button#rech {
   border-width: 2, 5px;
   border-color: black;
   margin-top: 20px;
+}
+
+#start-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
+.searchBarButton {
+  width: auto;
+}
+.depart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.retour {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

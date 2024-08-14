@@ -18,15 +18,15 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid #ccc;
+  border: 1px solid #090909;
   padding: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  border-radius: 5rem;
+  border-radius: 15%;
+  box-shadow: 10%;
 }
 
 .description {
   font-weight: bold;
-  background-color: white;
 }
 
 .car-container {
@@ -39,4 +39,8 @@ p {
   margin-bottom: 20px;
   margin-left: 12%;
   margin-right: 15%;
+}
+
+.componentCardButton {
+  border-radius: 20%;
 }

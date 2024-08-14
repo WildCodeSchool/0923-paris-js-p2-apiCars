@@ -115,7 +115,7 @@ function ListCarModelRandom() {
           return true;
         });
 
-        setUniqueMakes(uniqueMakesList.slice(0, 9));
+        setUniqueMakes(uniqueMakesList.slice(0, 6));
       })
       .catch((error) => console.error("Error fetching data:", error));
   }, []);

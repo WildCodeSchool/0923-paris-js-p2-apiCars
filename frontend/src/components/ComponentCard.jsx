@@ -10,8 +10,8 @@ function ComponentCard(props) {
   if (location.pathname === "/") {
     content = (
       <button
+        className="componentCardButton"
         type="button"
-        className="button"
         onClick={() => navigate(`/ListCategory?make=${car.make}`)}
       >
         <p className="description">{car.make}</p>
@@ -20,6 +20,7 @@ function ComponentCard(props) {
   } else if (location.pathname === "/ListCategory") {
     content = (
       <button
+        className="componentCardButton"
         type="button"
         onClick={() => navigate(`/CarPage?model=${car.model}`)}
       >

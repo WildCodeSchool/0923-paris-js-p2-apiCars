@@ -23,7 +23,7 @@ function CompLog() {
     } else if (password === "apicar" && email === "apicar@gmail.com") {
       navigate("/");
     } else {
-      alert("utilisateur non reconnue.");
+      alert("Heureux de vous revoir sur APICAR");
     }
   };
 

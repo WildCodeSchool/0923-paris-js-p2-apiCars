@@ -22,11 +22,12 @@ function Descriptioncar() {
 
   return (
     <div className="carpage">
-      <p id="modelcar">{car?.model}</p>
+      <p id="modelcar">Modèle : {car?.model}</p>
       <div className="descriptioncar">
-        <p>Modèle : {car?.model}</p>
-        <p>Cylindrées : {car?.cylinders}</p>
+        <p>Cylindrée : {car?.cylinders}</p>
         <p>Carburant : {car?.fuel_type}</p>
+        <p>Année : {car?.year}</p>
+        <p>Consomation en ville : {car?.combination_mpg}</p>
       </div>
       <div className="carimage">
         <img id="tof1" src="src/assets/BUGATTI-CHIRON-02.png" alt="" />

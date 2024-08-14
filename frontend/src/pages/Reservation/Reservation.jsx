@@ -9,7 +9,8 @@ function Reservation() {
     <>
       <NavBar />
       <BannerReservation />
-      <div className="reservation">
+
+      <div className="reservation1">
         <input type="text" placeholder="NOM :" />
         <input type="text" placeholder="PRENOM :" />
       </div>
