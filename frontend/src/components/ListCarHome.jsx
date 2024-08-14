@@ -1,30 +1,49 @@
 import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import ComponentCard from "./ComponentCard";
-import mercedezImage from "../assets/photos/mercedesBenz.jpg";
-import peugeotImage from "../assets/photos/Peugeot.jpg";
-import renaultImage from "../assets/photos/utilitaire.jpg";
-import skodaImage from "../assets/photos/Skoda.jpg";
-import volvoImage from "../assets/photos/Volvo.jpg";
-import mazdaImage from "../assets/photos/Mazda6.png";
-import volkswagenImage from "../assets/photos/VWCocci.jpg";
-import toyotaImage from "../assets/photos/ToyotaYaris.jpg";
+import mercedez from "../assets/photos/mercedesBenz.jpg";
+import peugeot from "../assets/photos/Peugeot.jpg";
+import renault from "../assets/photos/utilitaire.jpg";
+import skoda from "../assets/photos/Skoda.jpg";
+import volvo from "../assets/photos/Volvo.jpg";
+import mazda from "../assets/photos/Mazda6.png";
+import volkswagen from "../assets/photos/VWCocci.jpg";
+import toyota from "../assets/photos/ToyotaYaris.jpg";
+import ferrari from "../assets/photos/ferrari.jpg";
+import subaru from "../assets/photos/subaru.jpg";
+import audi from "../assets/photos/Audi.jpg";
+import cadillac from "../assets/photos/cadillac.jpg";
+import nissan from "../assets/photos/nissan.jpg";
+import hyundai from "../assets/photos/hyundai.jpg";
+import alfaRomeo from "../assets/photos/laguna.jpeg";
+import xcAutomotive from "../assets/photos/carelec.jpg";
 
 const imageMap = {
-  mercedezImage,
-  peugeotImage,
-  renaultImage,
-  skodaImage,
-  volvoImage,
-  mazdaImage,
-  volkswagenImage,
-  toyotaImage,
+  alfaRomeo,
+  xcAutomotive,
+  ferrari,
+  subaru,
+  audi,
+  cadillac,
+  nissan,
+  hyundai,
+  mercedez,
+  peugeot,
+  renault,
+  skoda,
+  volvo,
+  mazda,
+  volkswagen,
+  toyota,
   "generic image": "src/assets/photos/defaultCar.jpg",
 };
 
 // Fonction pour normaliser la clé de la marque
-const normalizeMake = (make) => make.toLowerCase();
 
+const normalizeMake = (make) => {
+  return make.toLowerCase().replace(/\s+/g, " ").trim();
+};
+console.info(normalizeMake);
 function ListCarModelRandom() {
   const [params] = useSearchParams();
   const [uniqueMakes, setUniqueMakes] = useState([]);
@@ -40,11 +59,16 @@ function ListCarModelRandom() {
       .then((res) => res.json())
       .then((data) => {
         const uniqueMakesList = data.reduce((acc, car) => {
-          const normalizedMake = normalizeMake(car.make);
+          const normalizedMake = car.make
+            .toLowerCase()
+            .replace(/\s+/g, " ")
+            .trim();
+          console.info("Normalized Make:", normalizedMake); // Débogage
+          const image = imageMap[normalizedMake] || imageMap["generic image"];
           if (!acc.some((unique) => unique.make === car.make)) {
             acc.push({
               ...car,
-              image: imageMap[normalizedMake] || imageMap["generic image"],
+              image,
             });
           }
           return acc;

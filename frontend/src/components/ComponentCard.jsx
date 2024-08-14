@@ -29,10 +29,12 @@ function ComponentCard(props) {
     );
   }
   return (
-    <div className="propsVoiture">
-      {image}
-      {content}
-    </div>
+    <section className="container-props-car">
+      <div className="propsVoiture">
+        <img src={image} alt={car.make} className="picture-car" />
+        {content}
+      </div>
+    </section>
   );
 }
 

@@ -11,6 +11,12 @@ p {
   text-align: center;
   font-family: "Encode Sans Expanded";
 }
+.container-props-car {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
 .propsVoiture {
   display: flex;
   flex-direction: column;
@@ -20,30 +26,27 @@ p {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   border-radius: 15%;
   box-shadow: 10%;
-  height: auto;
-  width: auto;
+  height: 80%;
+  width: 40%;
+  margin: 1rem;
+  gap: 1rem;
 }
 .description {
   font-weight: bold;
 }
+.componentCardButton {
+  border-radius: 20%;
+}
+.picture-car {
+  height: 10vh;
+  width: 10vw;
+}
 .car-container {
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 15px;
   grid-row-gap: 15px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 12%;
-  margin-right: 15%;
-  gap: 5%;
-  margin-bottom: 3rem;
-}
-.componentCardButton {
-  border-radius: 20%;
-}
-.carte:hover {
-  transform: scale(1.15);
 }
